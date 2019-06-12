@@ -1,5 +1,5 @@
-import foo from './views/foo';
-import bar from './views/bar';
+import foo from './views/foo'
+import bar from './views/bar'
 
 const routes = {
     '/foo': foo,
@@ -32,6 +32,8 @@ class Router {
         //首页
         if (path === '/') path = '/foo'
         //创建页面实例
+        console.log(routes)
+        console.log(path)
         const view = new routes[path]()
         //调用页面方法，把页面加载到document.body中
         view.mount(document.body)

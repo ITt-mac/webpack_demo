@@ -6,9 +6,9 @@ export default class {
     mount(container){
         document.title='bar';
         container.innerHTML=template;
-        container.querySelector('.bar_gofoo').addEventListener('click',() => {
+        container.querySelector('.bar__gofoo').addEventListener('click',() => {
             //调用router.go 方法加载/foo 页面
-            router.go('foo');
+            router.go('/foo');
         })
     }
 }
